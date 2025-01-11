@@ -1,0 +1,53 @@
+/* Tailwind base styles (do not remove) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add Quantico font to Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+
+/* Apply Quantico font only to the navbar */
+.font-quantico {
+  font-family: 'Quantico', sans-serif;
+}
+
+/* Style for navbar links */
+.nav-link {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect: Add a white box around the text and change text color */
+.nav-link:hover {
+  color: black; 
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* Navbar hover: lighten the navbar background */
+nav:hover {
+  background-color: #1a202c; /* Slightly lighter black */
+}
+
+body {
+  @apply bg-eerieBlack;
+}
