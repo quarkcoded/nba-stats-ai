@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
-import Home from './home'; // Import Home.js
-import Stats from './stats'; // Import Stats.js
+import Home from './home'; // Import home.js
+import Stats from './stat-reference'; // Import stat-reference.js
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />  {/* Home page route */}
-        <Route path="/stats" element={<Stats />} /> {/* Stats page route */}
+        <Route path="/stat-reference" element={<Stats />} /> {/* Stats page route */}
       </Routes>
     </Router>
   );

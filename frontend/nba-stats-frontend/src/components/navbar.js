@@ -10,7 +10,7 @@ const Navbar = () => {
         {/* Navbar links in the center */}
         <div className="space-x-6 flex">
           <a href="/" className="nav-link">Home</a>
-          <a href="/stats" className="nav-link">Stats</a>
+          <a href="/stat-reference" className="nav-link">Stats</a>
         </div>
 
         {/* Profile and Login on the right */}
